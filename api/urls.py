@@ -19,6 +19,6 @@ from payslip import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', views.PayslipFunc.as_view()),
-    path('api/<int:pk>', views.APIUpdateFields.as_view())
+    path('api/', views.PayslipAPI.as_view()),
+
 ]
